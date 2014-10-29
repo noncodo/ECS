@@ -3,18 +3,10 @@ ECS
 
 Evolutionary conserved RNA structure prediction
 
- version 0.9beta
-	 __  __          ______    _____  _____          _   _
-	|  \/  |   /\   |  ____|  / ____|/ ____|   /\   | \ | |
-	| \  / |  /  \  | |__    | (___ | |       /  \  |  \| |
-	| |\/| | / /\ \ |  __|    \___ \| |      / /\ \ | . ` |
-	| |  | |/ ____ \| |       ____) | |____ / ____ \| |\  |
-	|_|  |_/_/    \_\_|      |_____/ \_____/_/    \_\_| \_|
-	 SCAN MULTIPLE ALIGNMENTS FOR CONSERVED RNA STRUCTURES
-
 Reads a set of maf files, realigns them with mafft, breaks them into windows,
 calculates stats, scans with SISSIz or RNAz, outputs bed coordonates of high-confidence predictions
-*** Known issues ***
+
+Known issues:
 -Using MAFFT realignment causes certain jobs to hang when finished; this is likely an executor service problem
 
 Usage:     java -jar MafScanCcr.jar [options] -o output/directory -i input.maf (last parameter must be -i)
